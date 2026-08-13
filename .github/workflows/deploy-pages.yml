@@ -45,7 +45,7 @@ jobs:
         run: |
           set -euo pipefail
           for attempt in {1..18}; do
-            if page="$(curl -fsSL --max-time 15 "https://api.hbkr.net/?build=$GITHUB_SHA")" && grep -Fq "HBKR API | Domain Contract Explorer" <<< "$page"; then
+            if page="$(curl -fsSL --max-time 15 "https://api.hbkr.net/?build=$GITHUB_SHA")" && grep -Fq "HBKR API | 공통 데이터 기준" <<< "$page"; then
               exit 0
             fi
             sleep 10
