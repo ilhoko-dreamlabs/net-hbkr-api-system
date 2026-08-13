@@ -6,7 +6,7 @@ for (const file of files) {
 const html = fs.readFileSync("index.html", "utf8");
 const css = fs.readFileSync("styles.css", "utf8");
 const js = fs.readFileSync("app.js", "utf8");
-for (const expected of ["HBKR API | Domain Contract Explorer", "PROTOTYPE", "https://api.hbkr.net/", "styles.css", "app.js"]) {
+for (const expected of ["HBKR API | 공통 데이터 기준", "프로토타입", "https://api.hbkr.net/", "styles.css", "app.js"]) {
   if (!html.includes(expected)) throw new Error("index.html missing: " + expected);
 }
 if (fs.readFileSync("CNAME", "utf8").trim() !== "api.hbkr.net") throw new Error("CNAME mismatch");
