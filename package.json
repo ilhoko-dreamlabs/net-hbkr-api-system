@@ -1,0 +1,13 @@
+{
+  "name": "net-hbkr-api-system",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Layer, Role, Capability, Evidence와 Talent-Project Matching 데이터 계약을 탐색하는 API 프로토타입.",
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "dev": "node scripts/dev-server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

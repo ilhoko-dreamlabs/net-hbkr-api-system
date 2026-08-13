@@ -1,0 +1,8 @@
+{
+  "name": "HBKR API",
+  "short_name": "HBKR API",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06120f",
+  "theme_color": "#67f7c1"
+}
