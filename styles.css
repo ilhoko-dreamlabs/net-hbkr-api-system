@@ -125,6 +125,7 @@ img { max-width: 100%; }
 .taxonomy-node p { color: var(--muted); font-size: .72rem; }
 
 .match-workspace, .workspace { display: grid; grid-template-columns: minmax(300px, .38fr) 1fr; border: 1px solid var(--line-strong); background: var(--surface); }
+.match-workspace > *, .workspace > * { min-width: 0; }
 .workspace-controls { padding: 24px; border-right: 1px solid var(--line-strong); }
 .workspace-controls label { display: block; margin: 18px 0 7px; color: var(--muted); font-family: var(--mono); font-size: .6rem; font-weight: 700; }
 .workspace-controls select, .workspace-controls input, .workspace-controls textarea { width: 100%; min-height: 46px; padding: 10px; color: var(--ink); border: 1px solid var(--line-strong); background: var(--paper); }
