@@ -29,8 +29,8 @@ window.addEventListener("scroll", function () { header?.classList.toggle("is-scr
 document.querySelectorAll("[data-year]").forEach(function (node) { node.textContent = String(new Date().getFullYear()); });
 
 const reveals = document.querySelectorAll("[data-reveal]");
-if ("Intersection사용 행동 관찰r" in window) {
-  const observer = new Intersection사용 행동 관찰r(function (entries) {
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
       entry.target.classList.add("is-visible");
